@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "SF Compact Display Medium"; /*Can be any text*/
+  src: local("SFCompactDisplayMedium"),
+    url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+      format("opentype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 24.37rem;
+  max-height: 52.75rem;
+}
+
+.inputUser {
+  position: absolute;
+  width: 22rem;
+  height: 3.25rem;
+  left: 1.1rem;
+  top: 16.8rem;
+  background: #aad04a;
+  border: 0.1rem solid #50555c;
+  border-radius: 1.3rem;
+}
+.inputPassword {
+  position: absolute;
+  width: 22rem;
+  height: 3.25rem;
+  left: 1.1rem;
+  top: 21rem;
+  background: #aad04a;
+  border: 0.1rem solid #50555c;
+  border-radius: 1.3rem;
+}
+::placeholder {
+  font-family: "SF Compact Display Medium";
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1rem;
+  color: #000000;
+  text-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+.buttonLogin {
+  box-sizing: border-box;
+  position: absolute;
+  width: 165px;
+  height: 36px;
+  left: 105px;
+  top: 413px;
+  background: #d5eef2;
+  border: 0.1rem solid #979797;
+  text-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.3rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 0.9rem;
+}
+.buttonRegister {
+  box-sizing: border-box;
+  position: absolute;
+  width: 165px;
+  height: 36px;
+  left: 105px;
+  top: 29rem;
+  background: #d5eef2;
+  border: 0.1rem solid #979797;
+  text-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.3rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 0.9rem;
+}
