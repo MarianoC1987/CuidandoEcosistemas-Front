@@ -16,9 +16,6 @@ function UserLogin() {
         <input
           className="inputUser"
           type="email"
-          id="email"
-          pattern=".+@globex\.com"
-          size="15"
           placeholder="Usuario"
           required
           {...register("email", { required: true, minLength: 8 })}
