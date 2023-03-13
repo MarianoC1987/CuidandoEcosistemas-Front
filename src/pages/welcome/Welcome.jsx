@@ -4,7 +4,7 @@ import logo from "../../assets/images/welcomeLogo.png";
 
 function Welcome() {
   return (
-    <div className="welcome-main">
+    <main className="welcome-main">
       <div className="welcome-borders">
         <img src={borders} />
         <div className="welcome-logo">
@@ -13,7 +13,7 @@ function Welcome() {
       </div>
       <h1>¡Hola!</h1>
       <p></p>
-    </div>
+    </main>
   );
 }
 
