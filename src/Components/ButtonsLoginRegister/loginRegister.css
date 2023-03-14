@@ -1,3 +1,9 @@
+.arrowLeft {
+    /* filter: invert(10) brightness(1.2); */
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+ 
  .formStyles {
     display: flex;
     flex-direction: column;
