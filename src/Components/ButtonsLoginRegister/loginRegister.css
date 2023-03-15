@@ -11,15 +11,25 @@
     width: 23.438rem; 
     /* position: absolute; */
 } 
-
+.tittleRegister {
+    margin:1rem;
+    text-align:center;
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 700;
+}
 
 .divStyles {
 
     position: relative;
     background-color: white;
     border: 1px solid #000000;
-    height: 50.75rem;
-    width: 23.438;
+    /* height: 50.75rem;
+    width: 23.438; */
+    width: 24.37rem;
+    height: 52.75rem;
+    margin:0;
+    padding:0;
 
 }
 
@@ -37,7 +47,7 @@ label.inputLabel > input {
 
 #inputLabel1 {
     position:absolute;
-    top:7.563rem;
+    top:11.563rem;
     
 }
 .inputText {

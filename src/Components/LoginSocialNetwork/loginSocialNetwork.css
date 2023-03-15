@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "SF Compact Display Medium"; /*Can be any text*/
+    src: local("SFCompactDisplayMedium"),
+      url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+        format("opentype");
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 24.37rem;
+    max-height: 52.75rem;
+  }
+  
+  .buttonOne {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 19rem;
+    height: 2.6rem;
+    top: 33rem;
+    background: #ffffff;
+    border: 0.18rem solid #b5ed93;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.3rem;
+  }
+  .buttonOne h1 {
+    display: flex;
+    font-family: "SF Compact Display Medium";
+    font-weight: 100;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  .buttonTwo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 19rem;
+    height: 2.6rem;
+    top: 36.6rem;
+    background: #ffffff;
+    border: 0.18rem solid #b5ed93;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.3rem;
+  }
+  .buttonTwo h1 {
+    display: flex;
+    font-family: "SF Compact Display Medium";
+    font-weight: 100;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  .buttonThree {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 19rem;
+    height: 2.6rem;
+    top: 15rem;
+    background: #ffffff;
+    border: 0.18rem solid #b5ed93;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.3rem;
+  }
+  .buttonThree h1 {
+    display: flex;
+    font-family: "SF Compact Display Medium";
+    font-weight: 100;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  .loginMain p {
+    position: absolute;
+    width: 34.6%;
+    height: 5px;
+    bottom: 8px;
+    background: #000000;
+    border-radius: 100px;
+  }

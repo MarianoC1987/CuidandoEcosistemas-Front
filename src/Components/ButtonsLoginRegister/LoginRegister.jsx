@@ -27,11 +27,11 @@ function LoginRegister() {
     <div className='divStyles'>
       <header>
         <div className="header1">
-        <Link to={`/welcome`}>
+        <Link to={`/login`}>
 
             <img className="arrowLeft" src={arrowLeft} alt="Flecha" />
         </Link>
-
+        <h1 className='tittleRegister'>Crear Nueva Cuenta</h1>
          </div>
       </header>
       <form  className='formStyles'>
@@ -44,7 +44,7 @@ function LoginRegister() {
             />
             {errors.name && <p>Last name is required.</p>}
           </label>
-          <label className='inputLabel' id='inputLabel2'>
+          {/* <label className='inputLabel' id='inputLabel2'>
             <input 
               class="inputText" 
               type="mail" 
@@ -58,7 +58,7 @@ function LoginRegister() {
           <input id="buton1" type="submit" value="Inciar Sesión" />    
           <button id="buton2" type="submit">
           Registrarse
-          </button>    
+          </button>     */}
 
         </form>
 

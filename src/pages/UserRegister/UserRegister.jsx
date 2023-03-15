@@ -1,14 +1,16 @@
 import React from 'react'
 import LoginRegister from '../../Components/ButtonsLoginRegister/LoginRegister';
+import UserLogin from '../../Components/UserLogin/UserLogin';
 import "./userregister.css";
 
 
 function UserRegister() {
   return (
-    <div className="userRegister-borders">
+    <main className="userRegister-borders">
       <LoginRegister/>
-    </div>
+      <UserLogin/>
+    </main>
   )
 }
 
-export default UserRegister
+export default UserRegister;
