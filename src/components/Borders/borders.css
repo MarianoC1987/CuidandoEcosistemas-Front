@@ -1,0 +1,13 @@
+.borders-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.borders-container img {
+  width: 105%;
+  height: 105%;
+}
