@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import Home from "./pages/home/Home";
-//import "./index.css";
 import Welcome from "./pages/welcome/Welcome";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UserLogin from "./components/userLogin/userLogin";
