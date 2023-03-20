@@ -50,13 +50,13 @@ label.inputLabel > input {
     top:11.563rem;
     
 }
-.inputText {
+.inputName {
     /* position: absolute; */
-    width: 222px;
+    /* width: 222px;
     height: 20px;
     left: 0px;
     /* top: 139px; */
-    font-family: 'SF Compact Display';
+    /* font-family: 'SF Compact Display';*/ 
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -64,9 +64,27 @@ label.inputLabel > input {
     display: flex;
     align-items: center;
     text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    position: absolute;
+    width: 22rem;
+    height: 3.25rem;
+    left: 1.1rem;
+    top: 12.5rem;
+    background: #aad04a;
+    border: 0.1rem solid #50555c;
+    border-radius: 1.3rem;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  */
 }
-
+ #inp  { 
+    position: absolute;
+    width: 22rem;
+    height: 3.25rem;
+    left: 1.1rem;
+    top: 21rem;
+    background: #aad04a;
+    border: 0.1rem solid #50555c;
+    border-radius: 1.3rem;
+}
 #inputLabel2 {
     position:absolute;
     top:12.375rem;
