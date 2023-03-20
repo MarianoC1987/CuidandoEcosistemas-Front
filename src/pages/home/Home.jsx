@@ -2,8 +2,11 @@ import "./home.css";
 import logo from "../../assets/images/logo-sinletras.png";
 import MenuBar from "../../components/MenuBar/MenuBar";
 import Borders from "../../components/Borders/Borders";
-import AccountBox from "../../assets/images/account_box.png";
-import Search from "../../assets/images/Search.png";
+import AccountBox from "../../assets/images/account_box.svg";
+import Search from "../../assets/images/Search.svg";
+import Clock from "../../assets/images/Clock.svg";
+import Add from "../../assets/images/add.svg";
+import Bulb from "../../assets/images/Idea.svg";
 
 function Home() {
   return (
@@ -25,9 +28,21 @@ function Home() {
           <img src={Search} alt="search icon" />
         </section>
         <section className="homeSectionThree">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <p></p>
+            <img src={Clock} />
+            <p>Recordatorios</p>
+          </div>
+          <div>
+            <p></p>
+            <img src={Add} />
+            <p>Agreagar</p>
+          </div>
+          <div>
+            <p></p>
+            <img src={Bulb} />
+            <p>Cuidados</p>
+          </div>
         </section>
         <section></section>
       </div>

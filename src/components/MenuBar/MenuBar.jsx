@@ -1,13 +1,13 @@
 import "./menuBar.css";
-import flower from "../../assets/images/local_florist.png";
-import home from "../../assets/images/Home.png";
-import add from "../../assets/images/add.png";
-import chat from "../../assets/images/speech-bubble.png";
+import flower from "../../assets/images/local_florist.svg";
+import home from "../../assets/images/Home.svg";
+import add from "../../assets/images/add.svg";
+import chat from "../../assets/images/speech-bubble.svg";
 
 function MenuBar() {
   return (
-    <div className="menu-main">
-      <section className="menu-images">
+    <div className="menuMain">
+      <section className="menuImages">
         <div>
           <img src={home} alt="home-icon" />
         </div>
