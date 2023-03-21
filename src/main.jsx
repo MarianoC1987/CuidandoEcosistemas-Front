@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Home from "./pages/home/Home";
 import Welcome from "./pages/welcome/Welcome";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import UserLogin from "./components/userLogin/userLogin";
+import Cubism from "./components/CubismBackground/Cubism";
 import Login from "./pages/login/login";
 import Register from "./pages/register/Register";
 
@@ -12,6 +12,7 @@ const router = createBrowserRouter([
   { name: "Home", path: "home", element: <Home /> },
   { name: "Login", path: "login", element: <Login /> },
   { name: "Register", path: "register", element: <Register /> },
+  { name: "MyPlants", path: "myplants", element: <Cubism /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

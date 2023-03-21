@@ -1,12 +1,13 @@
 import MenuBar from "../MenuBar/MenuBar";
-import Cubism from "../../assets/images/cubism.png";
+import Background from "../../assets/images/cubism.png";
+import "../CubismBackground/cubism.css";
 
 function Cubism() {
   return (
-    <>
-      <img src={Cubism} />
+    <div className="cubism">
+      <img src={Background} />
       <MenuBar />
-    </>
+    </div>
   );
 }
 export default Cubism;
