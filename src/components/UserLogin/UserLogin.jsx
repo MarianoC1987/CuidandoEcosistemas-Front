@@ -55,7 +55,8 @@ function UserLogin() {
         <button className="buttonLogin" type="submit">
           Iniciar Sesión
         </button>
-          <button className="buttonRegister" type="submit">
+
+          <button className="buttonRegister" onClick={()=>{navigate('/register')}} >
             Registrarse
           </button>
 

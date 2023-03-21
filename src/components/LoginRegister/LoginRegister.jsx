@@ -2,14 +2,14 @@ import React from 'react';
 import { useForm }  from "react-hook-form";
 import arrowLeft from "../../assets/images/arrow_back_ios.png";
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { userRegister } from "../../api/Rule_auth_users";
 import swal from "sweetalert";
 import "./loginRegister.css";
 
 function LoginRegister() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const onSubmit = async (data) =>
       await userRegister(data)
@@ -86,7 +86,7 @@ function LoginRegister() {
           <p>La contraseña debe tener un minimo de 8 caracteres</p>
         )}
 
-        <button className="buttonLogin" type="submit">
+        <button className="buttonLogin"  onClick={()=>{navigate('/login')}}>
           Iniciar Sesión
         </button>
 
