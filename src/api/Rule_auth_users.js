@@ -8,8 +8,7 @@ export const loginSesion = async (usuario) => {
       return response.data;
     })
     .catch((error) => {
-      console.log(error);
-      throw error.response.data.error || "Error procesando la solicitud";
+      throw error.response.data.message || "Error procesando la solicitud";
     });
 };
 

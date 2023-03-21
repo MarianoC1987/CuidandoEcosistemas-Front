@@ -3,10 +3,9 @@ import "../UserLogin/UserLogin.css";
 import { useForm } from "react-hook-form";
 import { loginSesion } from "../../api/Rule_auth_users";
 import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 
 function UserLogin() {
-  /* const onSubmit = (data) => console.log(data); */
-
   const navigate = useNavigate();
 
   const onSubmit = async (data) =>
@@ -15,8 +14,9 @@ function UserLogin() {
         navigate("/home");
       })
       .catch((error) => {
-        alert(error.response);
-        console.log(error.response);
+        swal(error, {
+          icon: "error",
+        });
       });
 
   const {
