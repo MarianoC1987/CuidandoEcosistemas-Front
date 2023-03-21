@@ -17,7 +17,6 @@ function LoginRegister() {
         .then(() => {
         //   navigate("/home");
         alert("El usuario se regsitro correctamente");
-        console.log(data);  
 
         })
         .catch((error) => {
@@ -25,6 +24,7 @@ function LoginRegister() {
         //     icon: "error",
         //   });
         alert("No se registró correctamente");
+        console.log(data);  
 
         });
     const {
@@ -52,7 +52,7 @@ function LoginRegister() {
               name="firstname"  
               placeholder="Nombre"
               required
-              {...register("firstname", { required: true, minLength: 3  })}
+              {...register("firstname", { required: true  })}
             />
             {errors.text && <p>Nombre de usuario es requerido</p>}
             <input 
@@ -61,7 +61,7 @@ function LoginRegister() {
               name="lastname"  
               placeholder="Apellido"
               required
-              {...register("lastname", { required: true, minLength: 3 })}
+              {...register("lastname", { required: true })}
             />
             {errors.text && <p>Apellido del usuario es requerido</p>}
             <input

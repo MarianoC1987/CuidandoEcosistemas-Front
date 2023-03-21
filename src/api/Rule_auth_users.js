@@ -14,7 +14,8 @@ export const loginSesion = async (usuario) => {
 
 export const userRegister = async (usuario) => {
     let url = "/api/v1/users/register"; /* ({{URL}}/api/v1/users/register) */
-    return await API.post(url, firstname, lastname, email, password)
+    // const {firstname, lastname, email, password } = usuario;
+    return await API.post(url, usuario)
       .then((response) => {
         localStorage.setItem("token", response.data.token);
         return response.data;
