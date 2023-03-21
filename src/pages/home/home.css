@@ -71,7 +71,6 @@
   height: 2rem;
   width: 19rem;
   align-self: center;
-  border-radius: 15px;
   border: none;
   font-size: 1.2rem;
   background-color: #d5eef2;
@@ -109,4 +108,15 @@
   color: #aad04a;
   font-family: "SF Compact Display Medium";
   font-size: small;
+}
+
+.homeSectionFour {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Compact Display Medium";
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
 }

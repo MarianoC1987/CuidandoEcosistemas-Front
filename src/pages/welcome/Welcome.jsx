@@ -12,7 +12,7 @@ function Welcome() {
   }
   useEffect(() => {
     setTimeout(redirectLogin, 3000);
-  });
+  }, []);
 
   return (
     <main className="welcome-main">
