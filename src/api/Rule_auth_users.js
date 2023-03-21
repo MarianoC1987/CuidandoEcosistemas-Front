@@ -1,15 +1,14 @@
 import API from "./Rule_api";
 
 export const loginSesion = async (usuario) => {
-  let url = "/api/login";
+  let url = "/api/v1/users/login"; /* ({{URL}}/api/v1/users/login) */
   return await API.post(url, usuario)
     .then((response) => {
       localStorage.setItem("token", response.data.token);
       return response.data;
     })
     .catch((error) => {
-      console.log(error);
-      throw error.response.data.error || "Error procesando la solicitud";
+      throw error.response.data.message || "Error procesando la solicitud";
     });
 };
 
