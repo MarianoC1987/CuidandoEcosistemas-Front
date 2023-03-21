@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { loginSesion } from "../../api/Rule_auth_users";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
+import { Link } from "react-router-dom";
+
 
 function UserLogin() {
   const navigate = useNavigate();
@@ -53,9 +55,10 @@ function UserLogin() {
         <button className="buttonLogin" type="submit">
           Iniciar Sesión
         </button>
-        <button className="buttonRegister" type="submit">
-          Registrarse
-        </button>
+          <button className="buttonRegister" type="submit">
+            Registrarse
+          </button>
+
       </form>
     </>
   );
