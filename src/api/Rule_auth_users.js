@@ -1,7 +1,7 @@
 import API from "./Rule_api";
 
 export const loginSesion = async (usuario) => {
-  let url = "/api/login";
+  let url = "/api/v1/users/login"; /* ({{URL}}/api/v1/users/login) */
   return await API.post(url, usuario)
     .then((response) => {
       localStorage.setItem("token", response.data.token);

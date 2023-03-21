@@ -1,9 +1,24 @@
 import React from "react";
 import "../UserLogin/UserLogin.css";
 import { useForm } from "react-hook-form";
+import { loginSesion } from "../../api/Rule_auth_users";
+import { useNavigate } from "react-router-dom";
 
 function UserLogin() {
-  const onSubmit = (data) => console.log(data);
+  /* const onSubmit = (data) => console.log(data); */
+
+  const navigate = useNavigate();
+
+  const onSubmit = async (data) =>
+    await loginSesion(data)
+      .then(() => {
+        navigate("/home");
+      })
+      .catch((error) => {
+        alert(error.response);
+        console.log(error.response);
+      });
+
   const {
     register,
     handleSubmit,
