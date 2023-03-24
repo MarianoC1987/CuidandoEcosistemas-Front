@@ -11,15 +11,28 @@ import Bulb from "../../assets/images/Idea.svg";
 
 function Home() {
   const [searchOn, setSearchOn] = useState(false);
+  const [recents, setRecents] = useState([]);
+  //const [listItems, setListItems] = useState([]);
 
-  /*   useEffect(() => {
-    setSearchOn(searchOn);
-  }, []); */
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("listItem"));
+    if (items) {
+      setRecents(items);
+    }
+  }, []);
+
+  const addRecent = () => {
+    setRecents([...recents, searchText.value]);
+  };
 
   //Leo el ID que puse en el input (searchText) para que tome el valor del input real time
   const handleChange = () => {
     searchText.value !== "" ? setSearchOn(true) : setSearchOn(false);
   };
+
+  useEffect(() => {
+    localStorage.setItem("listItem", JSON.stringify(recents));
+  }, [recents]);
 
   return (
     <main className="homeMain">
@@ -37,7 +50,7 @@ function Home() {
             name="search"
             id="searchText"
           ></input>
-          <img src={Search} alt="search icon" />
+          <img src={Search} alt="search icon" onClick={addRecent} />
         </form>
         {searchOn === false ? (
           <section className="homeSectionThree">
@@ -60,10 +73,13 @@ function Home() {
         ) : (
           <section className="homeSectionFour">
             <h2>Recientes</h2>
-            <div></div>
+            <ul>
+              {recents.map((item) => {
+                return <li key={item}>{[item]}</li>;
+              })}
+            </ul>
           </section>
         )}
-        <section></section>
       </div>
       <MenuBar />
     </main>
