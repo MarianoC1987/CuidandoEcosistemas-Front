@@ -15,7 +15,6 @@ function LoginRegister() {
       await userRegister(data)
         
         .then(() => {
-        //   navigate("/home");
         alert("El usuario se regsitro correctamente");
 
         })
@@ -45,7 +44,6 @@ function LoginRegister() {
          </div>
       </header>
       <form  className='formStyles' onSubmit={handleSubmit(onSubmit)}>
-          {/* <label className='inputLabel' id='inputLabel1'> */}
             <input 
               className="inputName" 
               type="text" 

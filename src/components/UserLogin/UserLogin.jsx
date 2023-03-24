@@ -28,8 +28,8 @@ function UserLogin() {
   } = useForm();
 
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="formLogin"> 
+      <form  onSubmit={handleSubmit(onSubmit)}>
         <input
           className="inputUser"
           type="email"
@@ -61,7 +61,7 @@ function UserLogin() {
           </button>
 
       </form>
-    </>
+    </div>
   );
 }
 
