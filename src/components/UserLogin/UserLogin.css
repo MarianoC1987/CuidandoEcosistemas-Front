@@ -4,12 +4,12 @@
     url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
       format("opentype");
 }
-* {
+/* * {
   padding: 0;
   margin: 0;
   max-width: 24.37rem;
   max-height: 52.75rem;
-}
+} */
 
 .inputUser {
   position: absolute;
@@ -20,9 +20,6 @@
   background: #aad04a;
   border: 0.1rem solid #50555c;
   border-radius: 1.3rem;
-  /* display: flex;
-  align-items: center;
-  text-align: left; */
   padding-left: 1.1rem;
 }
 .inputPassword {
@@ -34,8 +31,7 @@
   background: #aad04a;
   border: 0.1rem solid #50555c;
   border-radius: 1.3rem;
-  /* display: flex; */
-  /* text-align: left; */
+
   padding-left: 1.1rem;
 }
 ::placeholder {
