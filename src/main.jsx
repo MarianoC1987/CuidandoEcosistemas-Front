@@ -8,7 +8,7 @@ import Welcome from "./pages/welcome/Welcome";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <Welcome /> */}
-    {/* <Login /> */}
-    <Home />
+    <Login />
+    {/* <Home /> */}
   </React.StrictMode>
 );
