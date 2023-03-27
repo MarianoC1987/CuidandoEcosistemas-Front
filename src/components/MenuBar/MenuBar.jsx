@@ -5,24 +5,26 @@ import add from "../../assets/images/add.svg";
 import chat from "../../assets/images/speech-bubble.svg";
 import { Link } from "react-router-dom";
 
-
 function MenuBar() {
+  const navigate = useNavigate();
   return (
     <div className="menuMain">
       <section className="menuImages">
-        <div>
+        <div
+          onClick={() => {
+            navigate("/home");
+          }}
+        >
           <img src={home} alt="home-icon" />
         </div>
-        
+
         <div>
           <img src={chat} alt="chat-icon" />
         </div>
         <div>
-        <Link  to={`/myplants/guardarplanta`}> 
-
-          <img src={add} alt="add-icon" />
+          <Link to={`/myplants/guardarplanta`}>
+            <img src={add} alt="add-icon" />
           </Link>
-
         </div>
 
         <div>
