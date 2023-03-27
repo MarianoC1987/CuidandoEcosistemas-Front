@@ -3,7 +3,7 @@ import flower from "../../assets/images/local_florist.svg";
 import home from "../../assets/images/Home.svg";
 import add from "../../assets/images/add.svg";
 import chat from "../../assets/images/speech-bubble.svg";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function MenuBar() {
   const navigate = useNavigate();
@@ -17,25 +17,17 @@ function MenuBar() {
         >
           <img src={home} alt="home-icon" />
         </div>
-        <div
-          onClick={() => {
-            navigate("/forum");
-          }}
-        >
+
+        <div>
           <img src={chat} alt="chat-icon" />
         </div>
-        <div
-          onClick={() => {
-            navigate("/home");
-          }}
-        >
-          <img src={add} alt="add-icon" />
+        <div>
+          <Link to={`/myplants/guardarplanta`}>
+            <img src={add} alt="add-icon" />
+          </Link>
         </div>
-        <div
-          onClick={() => {
-            navigate("/myplants");
-          }}
-        >
+
+        <div>
           <img src={flower} alt="flower-icon" />
         </div>
       </section>
