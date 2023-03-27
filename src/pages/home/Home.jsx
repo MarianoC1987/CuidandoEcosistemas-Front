@@ -15,11 +15,14 @@ function Home() {
   //const [listItems, setListItems] = useState([]);
 
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("listItem"));
-    if (items) {
-      setRecents(items);
-    }
+    //const data = JSON.parse(localStorage.getItem("listItem"));
+    const data = window.localStorage.getItem("listItem");
+    if (data !== null) setRecents(JSON.parse(data));
   }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("listItem", JSON.stringify(recents));
+  }, [recents]);
 
   const addRecent = () => {
     setRecents([...recents, searchText.value]);
@@ -29,10 +32,6 @@ function Home() {
   const handleChange = () => {
     searchText.value !== "" ? setSearchOn(true) : setSearchOn(false);
   };
-
-  useEffect(() => {
-    localStorage.setItem("listItem", JSON.stringify(recents));
-  }, [recents]);
 
   return (
     <main className="homeMain">
