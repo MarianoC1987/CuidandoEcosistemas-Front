@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 390px;
+    max-height: 844px;
+  }
+  
+  @font-face {
+    font-family: "SF Compact Display Medium";
+    src: local("SFCompactDisplayMedium"),
+      url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+        format("opentype");
+  }
+
+  .guardarTitle {
+    margin-bottom: 2rem;
+  }
+  
+  .homeLogo {
+    /* display: flex;
+    justify-content: center; */
+    /* margin-top:5rem; */
+    height: 15%;
+    width: 100%;
+    display:flex;
+
+  }
+
+  .homeLogo img {
+    width: 5rem;
+    height: 5rem;
+    margin-top:1.5rem;
+    /* position:relative; */
+  }
+
+.guardarContainer {
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    /* height: 100vh; */
+    /* background: rgba(194, 233, 251, 1);
+    background: radial-gradient(
+      circle,
+      rgba(161, 196, 253, 1) 10%,
+      rgba(194, 233, 251, 1) 100%
+    ); */
+    box-sizing: border-box;
+
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid #000000;
+
+  }
+
+
+  .progress-bar {
+    width: 21.5rem;
+    height: 0.8rem;
+    background-color: white;
+    margin-bottom: 50px;
+    /* margin-left:2.5rem;
+    margin-right:5%; */
+
+    border: 2px solid #000000;
+    border-radius: 8%;
+  }
+
+  .progress-bar div {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(170, 208, 74,1);
+  }
