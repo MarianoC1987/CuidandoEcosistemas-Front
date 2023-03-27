@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import logo from "../../assets/images/logo-sinletras.png";
+import { Link } from "react-router-dom";
 
 
 import SaludPlanta from "../../components/GuardarForm/SaludPlanta";
@@ -65,10 +66,15 @@ console.log(saved);
         )
         }
 
-    {saved==false ? <div className="progress-bar">
-      <div style={{width: page === 0? "33%": page === 1? "66%": page === 2? "85%" : "100%"}}></div>
-    </div> : (<div></div>) 
-    } 
+        {saved==false ? <div className="progress-bar">
+        <div style={{width: page === 0? "33%": page === 1? "66%": page === 2? "85%" : "100%"}}></div>
+        </div> : (<div></div>) 
+        } 
+
+        {
+            saved==true ?         <Link to={`/home`}>
+            <button>Home</button> </Link> : (<div></div>) 
+        }
 
 
     <div>{listcomponents[page]}</div>

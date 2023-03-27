@@ -16,6 +16,11 @@ const  SaludPlanta=({page, setPage, formData, setFormData}) => {
           }
       />
       <div className="buttonContainer">
+      <Link  to={`/home`}> 
+      <button >
+        Home
+      </button>
+      </Link>
       <button    onClick={() => {
             setPage(page + 1);
           }}>
