@@ -12,19 +12,21 @@ import Bulb from "../../assets/images/Idea.svg";
 function Home() {
   const [searchOn, setSearchOn] = useState(false);
   const [recents, setRecents] = useState([]);
-  //const [listItems, setListItems] = useState([]);
 
   useEffect(() => {
-    //const data = JSON.parse(localStorage.getItem("listItem"));
     const data = window.localStorage.getItem("listItem");
     if (data !== null) setRecents(JSON.parse(data));
   }, []);
 
-  useEffect(() => {
+  /* useEffect(() => {
     window.localStorage.setItem("listItem", JSON.stringify(recents));
-  }, [recents]);
+  }, [recents]); */
 
   const addRecent = () => {
+    window.localStorage.setItem(
+      "listItem",
+      JSON.stringify([...recents, searchText.value])
+    );
     setRecents([...recents, searchText.value]);
   };
 
@@ -73,8 +75,8 @@ function Home() {
           <section className="homeSectionFour">
             <h2>Recientes</h2>
             <ul>
-              {recents.map((item) => {
-                return <li key={item}>{[item]}</li>;
+              {recents?.map((item) => {
+                return <li key={item}>{item}</li>;
               })}
             </ul>
           </section>
