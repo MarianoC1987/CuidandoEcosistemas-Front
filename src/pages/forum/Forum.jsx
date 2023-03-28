@@ -12,13 +12,18 @@ function Forum() {
   const [list, setList] = useState([]);
 
   const showPublications = async () => {
-    const publications = await Rule_forum.getAllPublications();
-    setList(publications);
+    const {
+      data: { data },
+    } = await Rule_forum.getAllPublications();
+    setList(data);
   };
 
   useEffect(() => {
     showPublications();
   }, []);
+
+  console.log(Object.values(list));
+  console.log(list);
 
   return (
     <>
@@ -50,11 +55,15 @@ function Forum() {
           <h3>Comparti tu experiencia aca</h3>
         </div>
         <div className="forumArticles">
-          {list?.map((item) => (
-            <article className="article">
-              <p>{item.title}</p>
-              <p>{item.text}</p>
-              <p>{item.user}</p>
+          {Object.values(list).map((item) => (
+            <article className="article" key={item.id}>
+              {/* <p>{item.createdAt}</p> */}
+              <p>
+                <b>{item.user.firstname}</b>
+              </p>
+              <p>
+                <i>"{item.text}"</i>
+              </p>
             </article>
           ))}
         </div>
