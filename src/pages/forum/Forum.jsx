@@ -4,8 +4,9 @@ import Cubism from "../../components/CubismBackground/Cubism";
 import arrowLeft from "../../assets/images/arrow_back_ios.png";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-
 import Rule_forum from "../../api/Rule_forum";
+import ShowForumPosts from "../../components/ShowForumPosts/ShowForumPosts";
+import ForumPost from "../../components/ForumPost/ForumPost";
 
 function Forum() {
   const navigate = useNavigate();
@@ -21,9 +22,6 @@ function Forum() {
   useEffect(() => {
     showPublications();
   }, []);
-
-  console.log(Object.values(list));
-  console.log(list);
 
   return (
     <>
@@ -47,26 +45,18 @@ function Forum() {
             }}
           />
         </div>
-
         <div className="forumHeader">
           <h1>Foro</h1>
         </div>
-        <div className="forumPost">
+        <div
+          className="forumPost"
+          onClick={() => {
+            navigate("newpost");
+          }}
+        >
           <h3>Comparti tu experiencia aca</h3>
         </div>
-        <div className="forumArticles">
-          {Object.values(list).map((item) => (
-            <article className="article" key={item.id}>
-              {/* <p>{item.createdAt}</p> */}
-              <p>
-                <b>{item.user.firstname}</b>
-              </p>
-              <p>
-                <i>"{item.text}"</i>
-              </p>
-            </article>
-          ))}
-        </div>
+        <ShowForumPosts list={Object.values(list)} />
       </section>
     </>
   );
