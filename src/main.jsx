@@ -9,6 +9,7 @@ import MyPlants from "./pages/myplants/MyPlants";
 import Forum from "./pages/forum/Forum";
 import GuardarPlanta from "./pages/guardarPlanta/GuardarPlanta";
 import ForumPost from "./components/ForumPost/ForumPost";
+import ViewPost from "./pages/viewPost/ViewPost";
 
 const router = createBrowserRouter([
   { name: "Welcome", path: "/", element: <Welcome /> },
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   { name: "MyPlants", path: "myplants", element: <MyPlants /> },
   { name: "Forum", path: "forum", element: <Forum /> },
   { name: "NewPost", path: "forum/newpost", element: <ForumPost /> },
+  { name: "ViewPost", path: "forum/viewpost/:id", element: <ViewPost /> },
   {
     name: "MyPlants",
     path: "myplants/guardarplanta",

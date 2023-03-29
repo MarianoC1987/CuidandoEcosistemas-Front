@@ -14,7 +14,7 @@ function ForumPost() {
     navigate("/forum");
   }
   const onSubmit = async (data) =>
-    await Rule_forum.NewPost(data).then((response) => {
+    await Rule_forum.newPost(data).then((response) => {
       swal("La publicacion se realizo con exito", {
         icon: "success",
       }) &&
@@ -41,7 +41,7 @@ function ForumPost() {
             src={arrowLeft}
             alt="Flecha"
             onClick={() => {
-              navigate("/home");
+              navigate("/forum");
             }}
           />
           <img
