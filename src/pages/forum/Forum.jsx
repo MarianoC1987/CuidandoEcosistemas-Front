@@ -23,6 +23,8 @@ function Forum() {
     showPublications();
   }, []);
 
+  console.log(list);
+
   return (
     <>
       <Cubism className="forumBack" />
@@ -56,7 +58,11 @@ function Forum() {
         >
           <h3>Comparti tu experiencia aca</h3>
         </div>
-        <ShowForumPosts list={Object.values(list)} />
+        {list != "" ? (
+          <ShowForumPosts list={Object.values(list)} />
+        ) : (
+          <p>No hay publicaciones para mostrar</p>
+        )}
       </section>
     </>
   );
