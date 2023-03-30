@@ -1,0 +1,110 @@
+.viewPostBack {
+  position: relative;
+}
+
+.viewPostMain {
+  position: absolute;
+  height: 80vh;
+  width: 80vw;
+  top: 6%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.viewPostPics {
+  display: flex;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+}
+.viewPostLogo {
+  height: 13vh;
+  padding-left: 20%;
+}
+
+.viewPostArticle {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  align-items: center;
+  gap: 1rem;
+  background: #d8e8b0;
+  border: 2px solid #aad04a;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+.viewPostHeader {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postName {
+  font-size: 1.2rem;
+  color: #638707;
+}
+
+.postDate {
+  font-size: 0.8rem;
+}
+
+.postTitle {
+  width: 90%;
+  font-size: 2rem;
+}
+
+.postSubTitle {
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+.postText {
+  width: 90%;
+  height: auto;
+  font-size: 1rem;
+  background: #fffdfd;
+  border: 1px solid #aad04a;
+  padding: 1rem;
+}
+
+.postImgContainer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.postComments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.postInput {
+  background: #fffdfd;
+  width: 90%;
+  height: 2rem;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.postButton {
+  background-color: #aad04a;
+  border: 1px solid #242424;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: #000000;
+  margin-top: 0;
+}
