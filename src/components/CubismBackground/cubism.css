@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 390px;
+  max-height: 844px;
+}
+.cubism {
+  display: flex;
+  flex-direction: column;
+}

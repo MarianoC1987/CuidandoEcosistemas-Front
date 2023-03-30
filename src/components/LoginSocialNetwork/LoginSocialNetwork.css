@@ -4,12 +4,18 @@
     url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
       format("opentype");
 }
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   max-width: 24.37rem;
   max-height: 52.75rem;
+} */
+
+.loginButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .buttonOne {
@@ -83,3 +89,4 @@
   background: #000000;
   border-radius: 100px;
 }
+

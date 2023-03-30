@@ -6,32 +6,118 @@
   max-height: 844px;
 }
 
-.home-main {
+@font-face {
+  font-family: "SF Compact Display Medium";
+  src: local("SFCompactDisplayMedium"),
+    url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+      format("opentype");
+}
+
+.homeMain {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  border: 1px solid #000000;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-.home-borders {
-  width: 100%;
-  height: 90%;
+.homeBorders {
+  position: relative;
 }
 
-.home-borders img {
-  position: absolute;
-  width: 100%;
-  height: 90%;
-}
-
-.home-logo {
+.homeLogo {
   display: flex;
   justify-content: center;
 }
 
-.home-logo img {
+.homeLogo img {
   position: absolute;
   width: 30vw;
   height: 15vh;
   top: 70%;
+}
+
+.homeSections {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  height: 65%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homeSectionOne {
+  height: 2rem;
+  width: 2rem;
+  align-self: flex-end;
+}
+
+.homeSectionTwo {
+  height: 2rem;
+  align-self: center;
+}
+
+.homeSectionTwo img {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  right: 5%;
+}
+
+.homeSearch {
+  height: 2rem;
+  width: 19rem;
+  align-self: center;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #d5eef2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.homeSectionThree {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeSectionThree div {
+  height: 15vh;
+  width: 40vw;
+  border: 1px solid #979797;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.homeSectionThree div p {
+  width: 90%;
+  height: 1rem;
+  text-align: end;
+  color: #aad04a;
+  font-family: "SF Compact Display Medium";
+  font-size: small;
+}
+
+.homeSectionFour {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Compact Display Medium";
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
 }

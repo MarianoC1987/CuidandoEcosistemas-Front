@@ -1,9 +1,26 @@
 import React from "react";
 import "../UserLogin/UserLogin.css";
 import { useForm } from "react-hook-form";
+import { loginSesion } from "../../api/Rule_auth_users";
+import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
+import { Link } from "react-router-dom";
+
 
 function UserLogin() {
-  const onSubmit = (data) => console.log(data);
+  const navigate = useNavigate();
+
+  const onSubmit = async (data) =>
+    await loginSesion(data)
+      .then(() => {
+        navigate("/home");
+      })
+      .catch((error) => {
+        swal(error, {
+          icon: "error",
+        });
+      });
+
   const {
     register,
     handleSubmit,
@@ -11,8 +28,8 @@ function UserLogin() {
   } = useForm();
 
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="formLogin"> 
+      <form  onSubmit={handleSubmit(onSubmit)}>
         <input
           className="inputUser"
           type="email"
@@ -38,11 +55,13 @@ function UserLogin() {
         <button className="buttonLogin" type="submit">
           Iniciar Sesión
         </button>
-        <button className="buttonRegister" type="submit">
-          Registrarse
-        </button>
+
+          <button className="buttonRegister" onClick={()=>{navigate('/register')}} >
+            Registrarse
+          </button>
+
       </form>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SF Compact Display Medium"; /*Can be any text*/
+  src: local("SFCompactDisplayMedium"),
+    url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+      format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 390px;
+  max-height: 844px;
+}
+.cubism {
+  position: relative;
+}
