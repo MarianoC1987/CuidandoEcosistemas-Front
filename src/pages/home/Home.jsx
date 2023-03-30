@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [searchOn, setSearchOn] = useState(false);
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     const data = window.localStorage.getItem("listItem");
