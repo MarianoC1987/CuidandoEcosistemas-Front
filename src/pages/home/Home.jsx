@@ -8,10 +8,11 @@ import Search from "../../assets/images/Search.svg";
 import Clock from "../../assets/images/Clock.svg";
 import Add from "../../assets/images/add.svg";
 import Bulb from "../../assets/images/Idea.svg";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [searchOn, setSearchOn] = useState(false);
-  const [recents, setRecents] = useState([]);
+
 
   useEffect(() => {
     const data = window.localStorage.getItem("listItem");
@@ -42,7 +43,13 @@ function Home() {
         <img src={logo} />
       </div>
       <div className="homeSections">
-        <img className="homeSectionOne" src={AccountBox} />
+        <img
+          className="homeSectionOne"
+          src={AccountBox}
+          onClick={() => {
+            navigate("/UserProfile");
+          }}
+        />
         <form className="homeSectionTwo" onChange={handleChange}>
           <input
             className="homeSearch"

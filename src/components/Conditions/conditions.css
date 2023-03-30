@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "SF Compact Display Medium"; /*Can be any text*/
+  src: local("SFCompactDisplayMedium"),
+    url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+      format("opentype");
+}
+
+.cubism {
+  position: relative;
+}
+.arrowProfile {
+  height: 20px;
+  position: absolute;
+  z-index: 3;
+  left: 2.7rem;
+  top: 6.7rem;
+}
+.conditions {
+  position: absolute;
+  z-index: 3;
+  left: 4.5rem;
+  top: 11rem;
+  font-family: "SF Compact Display Medium";
+  line-height: 1.5rem;
+  color: #000000;
+}
+.terms {
+  width: 14rem;
+  position: absolute;
+  z-index: 3;
+  left: 6rem;
+  top: 16rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 1.12rem;
+  opacity: 0.8;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frameTerms {
+  position: absolute;
+  width: 17rem;
+  height: 24rem;
+  left: 4rem;
+  top: 15rem;
+  background: #aad04a;
+  border-radius: 1.3rem;
+}

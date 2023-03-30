@@ -7,14 +7,14 @@ import LoginSocialNetwork from "../../components/LoginSocialNetwork/LoginSocialN
 function Login() {
   return (
     // <>
-      <main className="loginMain">
-        <div className="loginLogo">
-          <img src={logo} />
-        </div>
-        <UserLogin />
-        <LoginSocialNetwork />
-        <p />
-      </main>
+    <main className="loginMain">
+      <section className="loginLogo">
+        <img src={logo} />
+      </section>
+      <UserLogin />
+      <LoginSocialNetwork />
+      <p />
+    </main>
     // </>
   );
 }
