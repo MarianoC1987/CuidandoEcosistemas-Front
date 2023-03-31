@@ -8,20 +8,20 @@ import Search from "../../assets/images/Search.svg";
 import Clock from "../../assets/images/Clock.svg";
 import Add from "../../assets/images/add.svg";
 import Bulb from "../../assets/images/Idea.svg";
+import ShowTreflePlants from "../../components/ShowTreflePlants/ShowTreflePlants";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const [searchOn, setSearchOn] = useState(false);
   const navigate = useNavigate();
+
+  const [searchOn, setSearchOn] = useState(false);
+  const [recents, setRecents] = useState([]);
+  const [searchValue, setSearchValue] = useState();
 
   useEffect(() => {
     const data = window.localStorage.getItem("listItem");
     if (data !== null) setRecents(JSON.parse(data));
   }, []);
-
-  /* useEffect(() => {
-    window.localStorage.setItem("listItem", JSON.stringify(recents));
-  }, [recents]); */
 
   const addRecent = () => {
     window.localStorage.setItem(
@@ -29,6 +29,11 @@ function Home() {
       JSON.stringify([...recents, searchText.value])
     );
     setRecents([...recents, searchText.value]);
+  };
+
+  const handleInput = () => {
+    addRecent();
+    setSearchValue(searchText.value);
   };
 
   //Leo el ID que puse en el input (searchText) para que tome el valor del input real time
@@ -58,7 +63,7 @@ function Home() {
             name="search"
             id="searchText"
           ></input>
-          <img src={Search} alt="search icon" onClick={addRecent} />
+          <img src={Search} alt="search icon" onClick={handleInput} />
         </form>
         {searchOn === false ? (
           <section className="homeSectionThree">
@@ -78,6 +83,8 @@ function Home() {
               <p>Cuidados</p>
             </div>
           </section>
+        ) : searchValue ? (
+          <ShowTreflePlants searchValue={searchValue} />
         ) : (
           <section className="homeSectionFour">
             <h2>Recientes</h2>
@@ -93,5 +100,4 @@ function Home() {
     </main>
   );
 }
-
 export default Home;
