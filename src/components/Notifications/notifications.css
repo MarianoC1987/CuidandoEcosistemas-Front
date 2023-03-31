@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "SF Compact Display Medium"; /*Can be any text*/
+  src: local("SFCompactDisplayMedium"),
+    url("../../assets/fonts/sf-compact-display-medium-5864711817c30.otf")
+      format("opentype");
+}
+
+.cubism {
+  position: relative;
+}
+.arrowProfile {
+  height: 20px;
+  position: absolute;
+  z-index: 3;
+  left: 2.7rem;
+  top: 6.7rem;
+}
+.notifications {
+  position: absolute;
+  z-index: 3;
+  left: 6.3rem;
+  top: 11rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 20px;
+  line-height: 1.5rem;
+  color: #000000;
+}
+.reminder {
+  position: absolute;
+  z-index: 3;
+  left: 8.7rem;
+  top: 18rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 1.12rem;
+  opacity: 0.8;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.messages {
+  position: absolute;
+  z-index: 3;
+  left: 10rem;
+  top: 22rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 1.12rem;
+  opacity: 0.8;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.news {
+  position: absolute;
+  z-index: 3;
+  left: 9.5rem;
+  top: 26rem;
+  font-family: "SF Compact Display Medium";
+  font-size: 1.12rem;
+  opacity: 0.8;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
