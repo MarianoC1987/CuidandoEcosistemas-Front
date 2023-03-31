@@ -1,10 +1,11 @@
 import API from "./Rule_api";
 
 const Rule_trefle_api = {
-  getAll: async () => {
+  getAll: async (search) => {
     const url = "/api/v1/trefle/search";
-    return await API.get(url)
+    return await API.get(url, search)
       .then((response) => {
+        console.log(url, search);
         return response.data;
       })
       .catch((error) => {
@@ -23,3 +24,5 @@ const Rule_trefle_api = {
       });
   },
 };
+
+export default Rule_trefle_api;
