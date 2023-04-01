@@ -84,7 +84,6 @@ function ViewPost() {
               <p className="postName">
                 <b>{details.user.firstname}</b>
               </p>
-              {/* <p>escribio la siguiente consulta el dia</p> */}
               <p className="postDate">{details.createdAt}</p>
             </div>
             <h1 className="postTitle">{details.title}</h1>

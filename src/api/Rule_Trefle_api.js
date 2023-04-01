@@ -2,14 +2,18 @@ import API from "./Rule_api";
 
 const Rule_trefle_api = {
   getAll: async (search) => {
-    const url = "/api/v1/trefle/search";
-    return await API.get(url, search)
+    const config = {
+      headers: {
+        "Access-Control-Allow-Origin": "http://localhost:5173",
+      },
+    };
+    const url = "/api/v1/trefle/search/";
+    return await API.post(url, search)
       .then((response) => {
-        console.log(url, search);
         return response.data;
       })
       .catch((error) => {
-        throw error.response.data.message;
+        throw error.message;
       });
   },
 
@@ -20,7 +24,7 @@ const Rule_trefle_api = {
         return response.data;
       })
       .catch((error) => {
-        throw error.response.data.message;
+        throw error.message;
       });
   },
 };

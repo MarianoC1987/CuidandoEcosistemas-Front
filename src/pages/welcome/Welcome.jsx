@@ -3,6 +3,7 @@ import borders from "../../assets/images/NatureBorders.png";
 import logo from "../../assets/images/welcomeLogo.png";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { isAuth } from "../../api/Rule_auth_users";
 
 function Welcome() {
   const navigate = useNavigate();
@@ -10,8 +11,13 @@ function Welcome() {
   function redirectLogin() {
     navigate("login");
   }
+
+  function redirectHome() {
+    navigate("home");
+  }
+
   useEffect(() => {
-    setTimeout(redirectLogin, 3000);
+    setTimeout(isAuth ? redirectHome : redirectLogin, 3000);
   }, []);
 
   return (

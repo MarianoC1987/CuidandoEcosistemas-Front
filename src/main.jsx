@@ -11,6 +11,9 @@ import MyProfile from "./components/MyProfile/MyProfile";
 import UserHelp from "./components/UserHelp/UserHelp";
 import Notifications from "./components/Notifications/Notifications";
 import Conditions from "./components/Conditions/Conditions";
+import Forum from "./pages/forum/Forum";
+import ViewPost from "./pages/viewPost/ViewPost";
+import ForumPost from "./components/ForumPost/ForumPost";
 
 const router = createBrowserRouter([
   { name: "Welcome", path: "/", element: <Welcome /> },
@@ -23,6 +26,10 @@ const router = createBrowserRouter([
   { name: "UserHelp", path: "userHelp", element: <UserHelp /> },
   { name: "Notifications", path: "notifications", element: <Notifications /> },
   { name: "Conditions", path: "conditions", element: <Conditions /> },
+
+  { name: "Forum", path: "forum", element: <Forum /> },
+  { name: "NewPost", path: "forum/newpost", element: <ForumPost /> },
+  { name: "ViewPost", path: "forum/viewpost/:id", element: <ViewPost /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

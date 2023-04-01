@@ -53,16 +53,15 @@
   align-items: center;
   font-family: "SF Compact Display Thin";
   font-size: 1rem;
+  gap: 1rem;
 }
 
-.inputTitle {
-  width: 90%;
-  height: 5%;
-}
-
+.inputTitle,
 .inputSubTitle {
   width: 90%;
-  height: 5%;
+  height: 10%;
+  border: 2px solid #aad04a;
+  border-radius: 10px;
 }
 
 .inputText {
