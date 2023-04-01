@@ -13,32 +13,6 @@ function ViewPost() {
   const { id } = useParams();
   const [details, setDetails] = useState();
 
-  /* const postDetails = async (post) => {
-    const {
-      data: { data },
-    } = await Rule_forum.viewPostId(post)
-      .then(() => {
-        setDetails(data);
-      })
-      .catch((error) => {
-        swal(error, {
-          icon: "error",
-        });
-      });
-  }; */
-
-  /*  const postDetails = async (post) => {
-    await Rule_forum.viewPostId(post)
-      .then((result) => {
-        setDetails( result);
-      })
-      .catch((error) => {
-        swal(error, {
-          icon: "error",
-        });
-      });
-  }; */
-
   const postDetails = async (post) => {
     const {
       data: { data },

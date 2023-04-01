@@ -23,8 +23,6 @@ function Forum() {
     showPublications();
   }, []);
 
-  console.log(list);
-
   return (
     <>
       <Cubism className="forumBack" />
