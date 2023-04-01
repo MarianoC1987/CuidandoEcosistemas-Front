@@ -14,6 +14,7 @@ import Conditions from "./components/Conditions/Conditions";
 import Forum from "./pages/forum/Forum";
 import ViewPost from "./pages/viewPost/ViewPost";
 import ForumPost from "./components/ForumPost/ForumPost";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 
 const router = createBrowserRouter([
   { name: "Welcome", path: "/", element: <Welcome /> },
@@ -30,6 +31,8 @@ const router = createBrowserRouter([
   { name: "Forum", path: "forum", element: <Forum /> },
   { name: "NewPost", path: "forum/newpost", element: <ForumPost /> },
   { name: "ViewPost", path: "forum/viewpost/:id", element: <ViewPost /> },
+
+  { name: "Error", path: "*", element: <ErrorPage /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

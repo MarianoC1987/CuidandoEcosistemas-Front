@@ -84,7 +84,7 @@ function Home() {
             </div>
           </section>
         ) : searchValue ? (
-          <ShowTreflePlants searchValue={searchValue} />
+          <ShowTreflePlants searchValue={searchValue} recents={recents} />
         ) : (
           <section className="homeSectionFour">
             <h2>Recientes</h2>

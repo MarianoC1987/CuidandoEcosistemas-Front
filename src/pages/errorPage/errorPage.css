@@ -1,0 +1,31 @@
+.errorContainer {
+  margin: auto;
+  height: 90vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.errorImage {
+  height: 30%;
+}
+
+.errorTitle,
+.errorSubTitle {
+  text-align: center;
+}
+
+.errorButton {
+  height: 3rem;
+  width: 40vw;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #aad04a;
+  color: black;
+}
