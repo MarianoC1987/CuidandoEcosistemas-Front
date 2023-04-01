@@ -59,7 +59,7 @@ function Forum() {
         {list != "" ? (
           <ShowForumPosts list={Object.values(list)} />
         ) : (
-          <p>No hay publicaciones para mostrar</p>
+          <p className="forumNoPosts">No hay publicaciones para mostrar</p>
         )}
       </section>
     </>
