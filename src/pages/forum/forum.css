@@ -52,3 +52,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.forumNoPosts {
+  height: 60%;
+  font-size: large;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 500;
+}
