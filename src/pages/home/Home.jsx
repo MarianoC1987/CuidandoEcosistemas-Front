@@ -16,7 +16,7 @@ function Home() {
 
   const [searchOn, setSearchOn] = useState(false);
   const [recents, setRecents] = useState([]);
-  const [searchValue, setSearchValue] = useState();
+  const [searchValue, setSearchValue] = useState({});
 
   useEffect(() => {
     const data = window.localStorage.getItem("listItem");
@@ -33,7 +33,7 @@ function Home() {
 
   const handleInput = () => {
     addRecent();
-    setSearchValue(searchText.value);
+    setSearchValue({ search: searchText.value });
   };
 
   //Leo el ID que puse en el input (searchText) para que tome el valor del input real time

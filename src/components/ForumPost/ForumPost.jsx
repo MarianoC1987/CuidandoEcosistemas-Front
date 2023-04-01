@@ -69,7 +69,6 @@ function ForumPost() {
             className="inputSubTitle"
             type="text"
             placeholder="Subtitulo"
-            required
             {...register("subtitle", { minLength: 4 })}
           />
           <textarea

@@ -13,7 +13,6 @@ const Rule_forum = {
   },
 
   newPost: async (data) => {
-    console.log(data);
     const url = `/api/v1/forum/createpublication`;
     return await API.post(url, data)
       .then((response) => {
@@ -25,7 +24,6 @@ const Rule_forum = {
   },
 
   viewPostId: async (id) => {
-    console.log(id);
     const url = `/api/v1/forum/publication/${id}`;
     return await API.get(url)
       .then((response) => {

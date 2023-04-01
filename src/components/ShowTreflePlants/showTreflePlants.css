@@ -1,7 +1,53 @@
 .trefleContainer {
   height: 50vh;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 1rem;
+  overflow: scroll;
+}
+.trefleCard {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trefleImgContainer {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+.trefleImg {
+  /* 
+  height: 100%;
+  width: auto; */
+  object-fit: fill;
+  object-position: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.trefleNames {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.trefleCommonName {
+  font-size: 1rem;
+}
+
+.trefleScientificName {
+  font-size: 0.8rem;
 }
