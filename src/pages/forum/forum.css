@@ -11,18 +11,19 @@
 
 .forumMain {
   position: absolute;
-  height: 80vh;
+  height: 78vh;
   width: 80vw;
-  top: 6%;
-  left: 10%;
+  top: 3rem;
+  left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 300px;
+  max-height: 650px;
 }
 .forumPics {
   display: flex;
   justify-content: flex-start;
-  /* justify-content: space-between; */
 }
 .forumLogo {
   height: 13vh;

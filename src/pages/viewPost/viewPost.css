@@ -4,10 +4,11 @@
 
 .viewPostMain {
   position: absolute;
-  height: 80vh;
+  height: 75vh;
   width: 80vw;
-  top: 6%;
-  left: 10%;
+  max-width: 300px;
+  top: 3rem;
+  left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

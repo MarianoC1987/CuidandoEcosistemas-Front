@@ -17,7 +17,9 @@ function Welcome() {
   }
 
   useEffect(() => {
-    setTimeout(isAuth ? redirectHome : redirectLogin, 3000);
+    setTimeout(() => {
+      isAuth() ? redirectHome() : redirectLogin();
+    }, 3000);
   }, []);
 
   return (

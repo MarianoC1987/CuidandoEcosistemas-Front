@@ -6,6 +6,7 @@
   max-height: 844px;
 }
 .cubism {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
