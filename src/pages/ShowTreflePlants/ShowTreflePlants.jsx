@@ -4,8 +4,8 @@ import arrowLeft from "../../assets/images/arrow_back_ios.png";
 import { useEffect, useState } from "react";
 import Rule_trefle_api from "../../api/Rule_Trefle_api";
 import { useNavigate, useParams } from "react-router-dom";
-import MenuBar from "../MenuBar/MenuBar";
-import Borders from "../Borders/Borders";
+import MenuBar from "../../components/MenuBar/MenuBar";
+import Borders from "../../components/Borders/Borders";
 
 function ShowTreflePlants() {
   const searchValue = useParams();
@@ -17,15 +17,6 @@ function ShowTreflePlants() {
     const data = await Rule_trefle_api.getAll(search);
     setList(data);
   };
-
-  /* const showTrefle = async (search) => {
-    const {
-      data: {
-        json: { data },
-      },
-    } = await Rule_trefle_api.getAll(search);
-    setList(data);
-  }; */
 
   useEffect(() => {
     showTrefle(searchValue);
