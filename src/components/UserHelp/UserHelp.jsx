@@ -31,11 +31,18 @@ function UserHelp() {
         >
           Mis plantas
         </p>
-        <p className="textForo">Foro</p>
+        <p
+          className="textForo"
+          onClick={() => {
+            navigate("/forum");
+          }}
+        >
+          Foro
+        </p>
         <p
           className="textSearch"
           onClick={() => {
-            navigate("/Home");
+            navigate("/home");
           }}
         >
           Buscador

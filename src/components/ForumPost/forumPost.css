@@ -13,17 +13,18 @@
   position: absolute;
   height: 80vh;
   width: 80vw;
-  top: 6%;
-  left: 10%;
+  top: 3rem;
+  left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
+  max-width: 300px;
+  max-height: 650px;
 }
 .postPics {
   display: flex;
   justify-content: flex-start;
-  /* justify-content: space-between; */
 }
 .postLogo {
   height: 13vh;

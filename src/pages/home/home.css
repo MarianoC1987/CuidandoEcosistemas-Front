@@ -33,22 +33,20 @@
 
 .homeLogo img {
   position: absolute;
-  width: 30vw;
+  width: 8rem;
   height: 15vh;
   top: 70%;
 }
 
 .homeSections {
   position: absolute;
-  top: 6%;
-  left: 10%;
+  align-self: center;
+  top: 3rem;
   height: 65%;
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 390px;
-  max-height: 844px;
 }
 
 .homeSectionOne {
@@ -66,7 +64,8 @@
   position: absolute;
   height: 2rem;
   width: 2rem;
-  right: 5%;
+  /* right: 5%; */
+  right: 0.5rem;
 }
 
 .homeSearch {
@@ -91,14 +90,14 @@
 
 .homeSectionThree div {
   height: 15vh;
-  width: 40vw;
+  width: 10rem;
   border: 1px solid #979797;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -115,7 +114,7 @@
 
 .homeSectionFour {
   height: 50vh;
-  width: 50vw;
+  /* width: 50vw; */
   display: flex;
   flex-direction: column;
   font-family: "SF Compact Display Medium";
