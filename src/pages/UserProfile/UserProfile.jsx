@@ -1,5 +1,5 @@
 import React from "react";
-import "./UserProfile/userProfile.css";
+import "./userProfile.css";
 import Cubism from "../../components/CubismBackground/Cubism";
 import ProfileButtons from "../../components/ProfileButtons/ProfileButtons";
 import SettingFrame from "../../components/SettingFrame/SettingFrame";
