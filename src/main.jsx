@@ -15,7 +15,7 @@ import Forum from "./pages/forum/Forum";
 import ViewPost from "./pages/viewPost/ViewPost";
 import ForumPost from "./components/ForumPost/ForumPost";
 import ErrorPage from "./pages/errorPage/ErrorPage";
-import ShowTreflePlants from "./components/ShowTreflePlants/ShowTreflePlants";
+import ShowTreflePlants from "./pages/ShowTreflePlants/ShowTreflePlants";
 
 const router = createBrowserRouter([
   { name: "Welcome", path: "/", element: <Welcome /> },
